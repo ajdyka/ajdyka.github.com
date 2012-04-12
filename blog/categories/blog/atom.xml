@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: blog | I'm moving to Hong Kong!]]></title>
+  <link href="http://ajdyka.github.com/blog/categories/blog/atom.xml" rel="self"/>
+  <link href="http://ajdyka.github.com/"/>
+  <updated>2012-04-12T20:00:34+10:00</updated>
+  <id>http://ajdyka.github.com/</id>
+  <author>
+    <name><![CDATA[AJ Dyka]]></name>
+    <email><![CDATA[aj.dyka@warpax.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Setting up Octopress under OS X Lion ... nothing is simple these days!]]></title>
+    <link href="http://ajdyka.github.com/blog/2012/04/12/setting-up-octopress-under-os-x-lion-dot-dot-dot-nothing-is-simple-these-days/"/>
+    <updated>2012-04-12T18:00:00+10:00</updated>
+    <id>http://ajdyka.github.com/blog/2012/04/12/setting-up-octopress-under-os-x-lion-dot-dot-dot-nothing-is-simple-these-days</id>
+    <content type="html"><![CDATA[<h2>My first post</h2>
+
+<p>So I'm expanding my repertoire and came across <a href="http://octopress.org/">Octopress</a>, "A blogging framework for hackers". It publishes static html (so it's performant) pages which you can create using markdown syntax (so it's easy to code) and can publish straight to github (so your code is open and freely available). Everything is open source and lovely!</p>
+
+<!--more-->
+
+
+<p>The install process seems simple enough, all you need is ruby, git .. but getting your Mac up and running takes some effort I found! Here are the hoops I needed to jump through to make it all happen:</p>
+
+<ol>
+<li><p>Get XCode form the <a href="http://itunes.apple.com/app/xcode/id497799835">App store</a></p></li>
+<li><p>Install the <a href="https://developer.apple.com/downloads/index.action">XCode CLI Tools</a></p></li>
+<li><p>Install <a href="http://mxcl.github.com/homebrew/">Homebrew</a></p></li>
+<li><p>Install Git via Homebrew</p></li>
+</ol>
+
+
+<p><code>
+$ sudo brew install git
+</code></p>
+
+<ol>
+<li>Time up update your gems!</li>
+</ol>
+
+
+<p><code>
+$ sudo gem update --system
+</code></p>
+
+<ol>
+<li>You'll be needing liquid as a dependancy later on, so it's easier to update that now</li>
+</ol>
+
+
+<p><code>
+$ sudo gem install liquid -v '2.2.2'
+</code></p>
+
+<ol>
+<li>rb-fsevent is another dependancy that needs up be updated before you can proceed ...</li>
+</ol>
+
+
+<p><code>
+$ sudo gem install rb-fsevent -v '0.4.3.1'
+</code></p>
+
+<ol>
+<li>Switch your environment to the new XCode</li>
+</ol>
+
+
+<p><code>
+$ sudo xcode-select -switch /Applications/Xcode.app
+</code></p>
+
+<ol>
+<li>I'm still running ruby 1.8 so I need to switch to the new version.</li>
+</ol>
+
+
+<p><code>
+$ sudo rvm install ruby-1.9.2-p318
+</code></p>
+
+<ol>
+<li>Now switch to the new verison of ruby, it doesn't happen automaically :-/</li>
+</ol>
+
+
+<p><code>
+$ rvm use 1.9.3
+</code></p>
+
+<ol>
+<li>Update your bundles ...</li>
+</ol>
+
+
+<p><code>
+$ bundle update
+</code></p>
+
+<ol>
+<li>now you can install Octopress!</li>
+</ol>
+
+
+<p><code>
+$ rake install
+</code></p>
+
+<p>Whew :)</p>
+
+<p>Resources:</p>
+
+<ul>
+<li>http://stackoverflow.com/questions/8139138/how-can-i-install-ruby-1-9-3-in-mac-os-x-lion</li>
+<li>http://stackoverflow.com/questions/9626729/how-do-you-install-build-ruby-1-9-3-on-osx-lion</li>
+<li>https://github.com/thibaudgg/rb-fsevent/issues/31</li>
+<li>http://daringfireball.net/projects/markdown/basics</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>
