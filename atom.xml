@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://ajdyka.github.com/atom.xml" rel="self"/>
   <link href="http://ajdyka.github.com/"/>
-  <updated>2012-04-12T18:15:05+10:00</updated>
+  <updated>2012-04-12T18:27:11+10:00</updated>
   <id>http://ajdyka.github.com/</id>
   <author>
     <name><![CDATA[AJ Dyka]]></name>
@@ -18,46 +18,62 @@
     <link href="http://ajdyka.github.com/blog/2012/04/12/setting-up-octopress-under-os-x-lion-dot-dot-dot-nothing-is-simple-these-days/"/>
     <updated>2012-04-12T18:00:00+10:00</updated>
     <id>http://ajdyka.github.com/blog/2012/04/12/setting-up-octopress-under-os-x-lion-dot-dot-dot-nothing-is-simple-these-days</id>
-    <content type="html"><![CDATA[<h1>Setting up Octopress under OS X Lion &#8230; nothing is simple these days!</h1>
+    <content type="html"><![CDATA[<h2>My first post.</h2>
 
-<h2>My first post.</h2>
+<p>So I&#8217;m expanding my repertoire and came across [http://octopress.org/ Octopress], &#8220;A blogging framework for hackers&#8221;. It publishes static html (so it&#8217;s performant) pages which you can create using markdown syntax (so it&#8217;s easy to code) and can publish straight to github (so your code is open and freely available). Everything is open source and lovely!</p>
 
-<p>So I&#8217;m expanding my repertoire and came across [http://octopress.org/ Octopress], &#8220;A blogging framework for hackers&#8221;. It publishes static html (so it&#8217;s performant) pages which you „create using markdown syntax (so it&#8217;s easy to code) and can publish straight to github (so your code is open and freely available). Everything is open source and lovely!</p>
-
-<p>The install process seems simple enough, all you need is ruby, git .. but getting your</p>
+<p>The install process seems simple enough, all you need is ruby, git .. but getting your Mac up and running takes some effort I found! Here are the hoops I needed to jump through to make it all happen:</p>
 
 <ol>
-<li>Get XCode form the App store
-http://itunes.apple.com/app/xcode/id497799835</li>
-<li>Install the XCode CLI Tools
-https://developer.apple.com/downloads/index.action</li>
-<li>Install Homebrew
-http://mxcl.github.com/homebrew/</li>
-<li>Install Git via Homebrew
-$ sudo brew install git</li>
+<li><p>Get XCode form the <a href="http://itunes.apple.com/app/xcode/id497799835">App store</a></p></li>
+<li><p>Install the <a href="https://developer.apple.com/downloads/index.action">XCode CLI Tools</a></p></li>
+<li><p>Install <a href="http://mxcl.github.com/homebrew/">Homebrew</a></p></li>
+<li><p>Install Git via Homebrew</p>
+
+<p> <code>$ sudo brew install git</code></p></li>
 </ol>
 
 
 <p>Now you can look at the [http://octopress.org/docs/setup/ installation documentation] for Octopress, but hold your horses! We&#8217;re not running a contemporary linux distro that has all of this stuff already packaged .. this means there&#8217;s more prep work to do :(</p>
 
 <ol>
-<li>Time up update your gems!
-$ sudo gem update &#8211;system</li>
-<li>You&#8217;ll be needing liquid as a dependancy later on, so it&#8217;s easier to update that now
-$ sudo gem install liquid -v &#8216;2.2.2&#8217;</li>
-<li>rb-fsevent is another dependancy that needs up be updated before you can proceed &#8230;
-$ sudo gem install rb-fsevent -v &#8216;0.4.3.1&#8217;</li>
-<li><p>sudo xcode-select -switch /Applications/Xcode.app</p></li>
-<li>I&#8217;m still running ruby 1.8
-$ sudo rvm install ruby-1.9.2-p318</li>
-<li>Now switch to the new verison of ruby, it doesn&#8217;t happen automaically :-/
-$ rvm use 1.9.3</li>
-<li>Update your bundles &#8230;
-$ bundle update</li>
-<li>now you can install Octopress!
-$ rake install</li>
+<li><p>Time up update your gems!</p>
+
+<p><code>$ sudo gem update --system</code></p></li>
+<li><p>You&#8217;ll be needing liquid as a dependancy later on, so it&#8217;s easier to update that now</p>
+
+<p><code>$ sudo gem install liquid -v '2.2.2'</code></p></li>
+<li><p>rb-fsevent is another dependancy that needs up be updated before you can proceed &#8230;</p>
+
+<p><code>$ sudo gem install rb-fsevent -v '0.4.3.1'</code></p></li>
+<li><p>Switch your environment to the new XCode</p>
+
+<p><code>$ sudo xcode-select -switch /Applications/Xcode.app</code></p></li>
+<li><p>I&#8217;m still running ruby 1.8</p>
+
+<p><code>$ sudo rvm install ruby-1.9.2-p318</code></p></li>
+<li><p>Now switch to the new verison of ruby, it doesn&#8217;t happen automaically :-/</p></li>
 </ol>
 
+
+<pre><code>`$ rvm use 1.9.3`
+</code></pre>
+
+<ol>
+<li>Update your bundles &#8230;</li>
+</ol>
+
+
+<pre><code>`$ bundle update`
+</code></pre>
+
+<ol>
+<li>now you can install Octopress!</li>
+</ol>
+
+
+<pre><code>`$ rake install`
+</code></pre>
 
 <p>Whew :)</p>
 
