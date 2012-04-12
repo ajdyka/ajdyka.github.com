@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://ajdyka.github.com/atom.xml" rel="self"/>
   <link href="http://ajdyka.github.com/"/>
-  <updated>2012-04-12T18:44:04+10:00</updated>
+  <updated>2012-04-12T19:05:28+10:00</updated>
   <id>http://ajdyka.github.com/</id>
   <author>
     <name><![CDATA[AJ Dyka]]></name>
@@ -31,34 +31,84 @@
 <li><p>Get XCode form the <a href="http://itunes.apple.com/app/xcode/id497799835">App store</a></p></li>
 <li><p>Install the <a href="https://developer.apple.com/downloads/index.action">XCode CLI Tools</a></p></li>
 <li><p>Install <a href="http://mxcl.github.com/homebrew/">Homebrew</a></p></li>
-<li><p>Install Git via Homebrew</p>
-
-<p> <code>$ sudo brew install git</code></p></li>
-<li><p>Time up update your gems!</p>
-
-<p> <code>$ sudo gem update --system</code></p></li>
-<li><p>You&#8217;ll be needing liquid as a dependancy later on, so it&#8217;s easier to update that now</p>
-
-<p> <code>$ sudo gem install liquid -v '2.2.2'</code></p></li>
-<li><p>rb-fsevent is another dependancy that needs up be updated before you can proceed &#8230;</p>
-
-<p> <code>$ sudo gem install rb-fsevent -v '0.4.3.1'</code></p></li>
-<li><p>Switch your environment to the new XCode</p>
-
-<p> <code>$ sudo xcode-select -switch /Applications/Xcode.app</code></p></li>
-<li><p>I&#8217;m still running ruby 1.8 so I need to switch to the new version.</p>
-
-<p> <code>$ sudo rvm install ruby-1.9.2-p318</code></p></li>
-<li><p>Now switch to the new verison of ruby, it doesn&#8217;t happen automaically :-/</p>
-
-<p><code>$ rvm use 1.9.3</code></p></li>
-<li><p>Update your bundles &#8230;</p>
-
-<p><code>$ bundle update</code></p></li>
-<li><p>now you can install Octopress!</p>
-
-<p><code>$ rake install</code></p></li>
+<li><p>Install Git via Homebrew</p></li>
 </ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo brew install git</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>Time up update your gems!</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo gem update --system</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>You&#8217;ll be needing liquid as a dependancy later on, so it&#8217;s easier to update that now</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo gem install liquid -v '2.2.2'</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>rb-fsevent is another dependancy that needs up be updated before you can proceed &#8230;</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo gem install rb-fsevent -v '0.4.3.1'</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>Switch your environment to the new XCode</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo xcode-select -switch /Applications/Xcode.app</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>I&#8217;m still running ruby 1.8 so I need to switch to the new version.</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo rvm install ruby-1.9.2-p318</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>Now switch to the new verison of ruby, it doesn&#8217;t happen automaically :-/</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ rvm use 1.9.3</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>Update your bundles &#8230;</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ bundle update</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>now you can install Octopress!</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ rake install</span></code></pre></td></tr></table></div></figure>
 
 
 <p>Whew :)</p>
