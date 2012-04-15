@@ -1,0 +1,354 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Setting up Octopress under OS X Lion ... nothing is simple these days! - I'm moving to Hong Kong!</title>
+  <meta name="author" content="AJ Dyka">
+
+  
+  <meta name="description" content="My first post So I&#8217;m expanding my repertoire and came across Octopress, &#8220;A blogging framework for hackers&#8221;. It publishes static &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://ajdyka.github.com/blog/2012/04/12/setting-up-octopress-under-os-x-lion-dot-dot-dot-nothing-is-simple-these-days">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="I'm moving to Hong Kong!" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">I'm moving to Hong Kong!</a></h1>
+  
+    <h2>New tech for a new start.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:ajdyka.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/about">About</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Setting up Octopress under OS X Lion ... nothing is simple these days!</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-04-12T18:00:00+10:00" pubdate data-updated="true">Apr 12<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><h2>My first post</h2>
+
+<p>So I&#8217;m expanding my repertoire and came across <a href="http://octopress.org/">Octopress</a>, &#8220;A blogging framework for hackers&#8221;. It publishes static html (so it&#8217;s performant) pages which you can create using markdown syntax (so it&#8217;s easy to code) and can publish straight to github (so your code is open and freely available). Everything is open source and lovely!</p>
+
+<!--more-->
+
+
+<p>The install process seems simple enough, all you need is ruby, git .. but getting your Mac up and running takes some effort I found! Here are the hoops I needed to jump through to make it all happen:</p>
+
+<ol>
+<li><p>Get XCode form the <a href="http://itunes.apple.com/app/xcode/id497799835">App store</a></p></li>
+<li><p>Install the <a href="https://developer.apple.com/downloads/index.action">XCode CLI Tools</a></p></li>
+<li><p>Install <a href="http://mxcl.github.com/homebrew/">Homebrew</a></p></li>
+<li><p>Install Git via Homebrew</p></li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo brew install git</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>Time up update your gems!</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo gem update --system</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>You&#8217;ll be needing liquid as a dependancy later on, so it&#8217;s easier to update that now</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo gem install liquid -v '2.2.2'</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>rb-fsevent is another dependancy that needs up be updated before you can proceed &#8230;</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo gem install rb-fsevent -v '0.4.3.1'</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>Switch your environment to the new XCode</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo xcode-select -switch /Applications/Xcode.app</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>I&#8217;m still running ruby 1.8 so I need to switch to the new version.</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo rvm install ruby-1.9.2-p318</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>Now switch to the new verison of ruby, it doesn&#8217;t happen automaically :-/</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ rvm use 1.9.3</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>Update your bundles &#8230;</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ bundle update</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>now you can install Octopress!</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ rake install</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Whew :)</p>
+
+<p>Resources:</p>
+
+<ul>
+<li>http://stackoverflow.com/questions/8139138/how-can-i-install-ruby-1-9-3-in-mac-os-x-lion</li>
+<li>http://stackoverflow.com/questions/9626729/how-do-you-install-build-ruby-1-9-3-on-osx-lion</li>
+<li>https://github.com/thibaudgg/rb-fsevent/issues/31</li>
+<li>http://daringfireball.net/projects/markdown/basics</li>
+</ul>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">AJ Dyka</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-04-12T18:00:00+10:00" pubdate data-updated="true">Apr 12<span>th</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/blog/'>blog</a>, <a class='category' href='/blog/categories/octopress/'>octopress</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://ajdyka.github.com/blog/2012/04/12/setting-up-octopress-under-os-x-lion-dot-dot-dot-nothing-is-simple-these-days/" data-via="ajdyka" data-counturl="http://ajdyka.github.com/blog/2012/04/12/setting-up-octopress-under-os-x-lion-dot-dot-dot-nothing-is-simple-these-days/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+      
+        <a class="basic-alignment right" href="/blog/2012/04/15/the-start-of-a-new-beginning/" title="Next Post: The start of a new beginning">The start of a new beginning &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/04/15/the-start-of-a-new-beginning/">The start of a new beginning</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/04/12/setting-up-octopress-under-os-x-lion-dot-dot-dot-nothing-is-simple-these-days/">Setting up Octopress under OS X Lion ... nothing is simple these days!</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("ajdyka", 5, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/ajdyka" class="twitter-follow-button" data-show-count="false">Follow @ajdyka</a>
+  
+</section>
+
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/ajdyka">@ajdyka</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'ajdyka',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - AJ Dyka -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

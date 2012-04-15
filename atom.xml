@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[I'm moving to Hong Kong!]]></title>
+  <link href="http://ajdyka.github.com/atom.xml" rel="self"/>
+  <link href="http://ajdyka.github.com/"/>
+  <updated>2012-04-15T22:26:41+10:00</updated>
+  <id>http://ajdyka.github.com/</id>
+  <author>
+    <name><![CDATA[AJ Dyka]]></name>
+    <email><![CDATA[aj.dyka@warpax.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[The start of a new beginning]]></title>
+    <link href="http://ajdyka.github.com/blog/2012/04/15/the-start-of-a-new-beginning/"/>
+    <updated>2012-04-15T21:30:00+10:00</updated>
+    <id>http://ajdyka.github.com/blog/2012/04/15/the-start-of-a-new-beginning</id>
+    <content type="html"><![CDATA[<p>Tomorrow I begin a four week course, &#8220;Cambridge ESOL Certificate in English Language Teaching to Adults (<a href="http://www.cambridgeesol.org/exams/celta/index.html">CELTA</a>)&#8221; at <a href="http://www.attc.edu.au/">ATTC</a>.</p>
+
+<p>By all reports it&#8217;s pretty full on, 9-5:30 weekdays with homework every night as well as some weekend prep time being required. I sure won&#8217;t be bored!</p>
+
+<p>This is a bit of a deviation from my existing career in CFML web development, and there&#8217;s a good reason for that!</p>
+
+<!--MORE-->
+
+
+<p>As probably already know, Tasmin and I are <a href="http://ajdyka.github.com/about/">moving to Hong Kong</a>, in fact she is already there getting our new appartment ready while I finish things off in Sydney.</p>
+
+<p>This has meant that I have started looking for work in HK already, and honestly it&#8217;s been pretty difficult finding any CFML being used there at all (which somewhat surprised me!).</p>
+
+<p>I&#8217;ve been doing the obligitory Google searches, researching and hitting up local job hunting sites and even contacted a few recruitment agents to no avail.</p>
+
+<p>At this point rather than &#8216;putting all of my eggs in one basket&#8217;, I thought it would be an appropriate time to enhance some of my other skills and get CELTA certified. (I already posess a Certificate IV in Assessment and Workplace Training and a TEFL Certificate)</p>
+
+<p>I&#8217;m still optimistic that I can pick up some remote consultancy work so I can maintain my CFML skills. In the event I cannot find anything permenant, I&#8217;ll have the CELTA qualificaiton to fall back on either in the capacity of classroom teacher or private tutor.</p>
+
+<p>Over the coming weeks I&#8217;ll post details on my progress through the course, keep an eye on the category:<a href="http://ajdyka.github.com/blog/categories/celta/">celta</a> for all related posts!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Setting up Octopress under OS X Lion ... nothing is simple these days!]]></title>
+    <link href="http://ajdyka.github.com/blog/2012/04/12/setting-up-octopress-under-os-x-lion-dot-dot-dot-nothing-is-simple-these-days/"/>
+    <updated>2012-04-12T18:00:00+10:00</updated>
+    <id>http://ajdyka.github.com/blog/2012/04/12/setting-up-octopress-under-os-x-lion-dot-dot-dot-nothing-is-simple-these-days</id>
+    <content type="html"><![CDATA[<h2>My first post</h2>
+
+<p>So I&#8217;m expanding my repertoire and came across <a href="http://octopress.org/">Octopress</a>, &#8220;A blogging framework for hackers&#8221;. It publishes static html (so it&#8217;s performant) pages which you can create using markdown syntax (so it&#8217;s easy to code) and can publish straight to github (so your code is open and freely available). Everything is open source and lovely!</p>
+
+<!--more-->
+
+
+<p>The install process seems simple enough, all you need is ruby, git .. but getting your Mac up and running takes some effort I found! Here are the hoops I needed to jump through to make it all happen:</p>
+
+<ol>
+<li><p>Get XCode form the <a href="http://itunes.apple.com/app/xcode/id497799835">App store</a></p></li>
+<li><p>Install the <a href="https://developer.apple.com/downloads/index.action">XCode CLI Tools</a></p></li>
+<li><p>Install <a href="http://mxcl.github.com/homebrew/">Homebrew</a></p></li>
+<li><p>Install Git via Homebrew</p></li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo brew install git</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>Time up update your gems!</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo gem update --system</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>You&#8217;ll be needing liquid as a dependancy later on, so it&#8217;s easier to update that now</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo gem install liquid -v '2.2.2'</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>rb-fsevent is another dependancy that needs up be updated before you can proceed &#8230;</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo gem install rb-fsevent -v '0.4.3.1'</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>Switch your environment to the new XCode</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo xcode-select -switch /Applications/Xcode.app</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>I&#8217;m still running ruby 1.8 so I need to switch to the new version.</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo rvm install ruby-1.9.2-p318</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>Now switch to the new verison of ruby, it doesn&#8217;t happen automaically :-/</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ rvm use 1.9.3</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>Update your bundles &#8230;</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ bundle update</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>now you can install Octopress!</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ rake install</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Whew :)</p>
+
+<p>Resources:</p>
+
+<ul>
+<li>http://stackoverflow.com/questions/8139138/how-can-i-install-ruby-1-9-3-in-mac-os-x-lion</li>
+<li>http://stackoverflow.com/questions/9626729/how-do-you-install-build-ruby-1-9-3-on-osx-lion</li>
+<li>https://github.com/thibaudgg/rb-fsevent/issues/31</li>
+<li>http://daringfireball.net/projects/markdown/basics</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>
