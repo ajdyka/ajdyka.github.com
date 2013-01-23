@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: octopress | Blogging again ...]]></title>
+  <title><![CDATA[Category: octopress | The Life and Times of AJ]]></title>
   <link href="http://ajdyka.github.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://ajdyka.github.com/"/>
-  <updated>2012-04-15T23:15:11+10:00</updated>
+  <updated>2013-01-23T10:25:27+08:00</updated>
   <id>http://ajdyka.github.com/</id>
   <author>
     <name><![CDATA[AJ Dyka]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Setting up Octopress under OS X Lion ... nothing is simple these days!]]></title>
     <link href="http://ajdyka.github.com/blog/2012/04/12/setting-up-octopress-under-os-x-lion-dot-dot-dot-nothing-is-simple-these-days/"/>
-    <updated>2012-04-12T18:00:00+10:00</updated>
+    <updated>2012-04-12T18:00:00+08:00</updated>
     <id>http://ajdyka.github.com/blog/2012/04/12/setting-up-octopress-under-os-x-lion-dot-dot-dot-nothing-is-simple-these-days</id>
     <content type="html"><![CDATA[<h2>My first post</h2>
 

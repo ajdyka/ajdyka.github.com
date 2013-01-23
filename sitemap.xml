@@ -4,26 +4,54 @@
         <loc>
             http://ajdyka.github.com/blog/2012/04/12/setting-up-octopress-under-os-x-lion-dot-dot-dot-nothing-is-simple-these-days/
         </loc>
-        <lastmod>2012-04-15T21:37:09+10:00</lastmod>
+        <lastmod>2012-04-15T19:37:09+08:00</lastmod>
     </url>
     <url>
         <loc>http://ajdyka.github.com/blog/2012/04/15/the-start-of-a-new-beginning/</loc>
-        <lastmod>2012-04-15T22:26:34+10:00</lastmod>
+        <lastmod>2012-04-15T20:26:34+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://ajdyka.github.com/blog/2012/08/07/back-online/</loc>
+        <lastmod>2012-08-07T18:56:15+08:00</lastmod>
     </url>
     <url>
         <loc>http://ajdyka.github.com/about/</loc>
-        <lastmod>2012-04-12T20:00:17+10:00</lastmod>
+        <lastmod>2012-04-12T18:00:17+08:00</lastmod>
     </url>
     <url>
         <loc>http://ajdyka.github.com/blog/archives/</loc>
-        <lastmod>2012-04-15T22:26:34+10:00</lastmod>
+        <lastmod>2012-08-07T18:56:15+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://ajdyka.github.com/china/</loc>
+        <lastmod>2013-01-23T10:16:12+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://ajdyka.github.com/hong-kong/</loc>
+        <lastmod>2013-01-23T10:19:09+08:00</lastmod>
     </url>
     <url>
         <loc>http://ajdyka.github.com/</loc>
-        <lastmod>2012-04-15T22:26:34+10:00</lastmod>
+        <lastmod>2012-08-07T18:56:15+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://ajdyka.github.com/octopress/</loc>
+        <lastmod>2013-01-23T10:23:23+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://ajdyka.github.com/professional-development/</loc>
+        <lastmod>2012-08-08T12:47:09+08:00</lastmod>
     </url>
     <url>
         <loc>http://ajdyka.github.com/resume/</loc>
-        <lastmod>2012-04-15T22:23:21+10:00</lastmod>
+        <lastmod>2012-04-15T20:23:21+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://ajdyka.github.com/travel/</loc>
+        <lastmod>2013-01-23T10:04:01+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://ajdyka.github.com/usa/</loc>
+        <lastmod>2013-01-23T10:10:18+08:00</lastmod>
     </url>
 </urlset>
