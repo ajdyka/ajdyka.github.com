@@ -3,11 +3,11 @@
 # ----------------------- #
 
 url: http://ajdyka.github.com
-title: Blogging again ...
-subtitle: ... and I'm moving to Hong Kong!
+title: The Life and Times of AJ
+subtitle: Updated from sunny Hong Kong!
 author: AJ Dyka
 simple_search: http://google.com/search
-description: A new blog I built with Octopress because I could. (eventually ... read the first post!)
+description: A new blog I built with Octopress because I should.
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
