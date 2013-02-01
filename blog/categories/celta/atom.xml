@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: celta | Blogging again ...]]></title>
+  <title><![CDATA[Category: celta | The Life and Times of AJ]]></title>
   <link href="http://ajdyka.github.com/blog/categories/celta/atom.xml" rel="self"/>
   <link href="http://ajdyka.github.com/"/>
-  <updated>2012-04-15T23:15:11+10:00</updated>
+  <updated>2013-01-23T11:10:41+08:00</updated>
   <id>http://ajdyka.github.com/</id>
   <author>
     <name><![CDATA[AJ Dyka]]></name>
@@ -14,9 +14,27 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Back Online]]></title>
+    <link href="http://ajdyka.github.com/blog/2012/08/07/back-online/"/>
+    <updated>2012-08-07T18:26:00+08:00</updated>
+    <id>http://ajdyka.github.com/blog/2012/08/07/back-online</id>
+    <content type="html"><![CDATA[<p>The haitus has been a bit longer than I anticipated, but a lot has happened!</p>
+
+<!-- more -->
+
+
+<p>The CELTA course took a lot more out of me than I anticipated, in face it left basically me no time to do anything that wasn't course related for the 4 weeks that it ran.</p>
+
+<p>After the course finished I spent two weeks catching up with family and friends back home in Victoria before flying out to Hong Kong.</p>
+
+<p>Since I landed here it's been a matter of acclimatisation both to the weather and the lifestyle :) I think I've settled in pretty well … while I haven't made any new friends as such I've been becomming familiar with the area that we live in (Ma On Shan, New Territories) and applying for a bunch of jobs, both IT and NET (Native English Teaching).</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[The start of a new beginning]]></title>
     <link href="http://ajdyka.github.com/blog/2012/04/15/the-start-of-a-new-beginning/"/>
-    <updated>2012-04-15T21:30:00+10:00</updated>
+    <updated>2012-04-15T21:30:00+08:00</updated>
     <id>http://ajdyka.github.com/blog/2012/04/15/the-start-of-a-new-beginning</id>
     <content type="html"><![CDATA[<p>Tomorrow I begin a four week course, "Cambridge ESOL Certificate in English Language Teaching to Adults (<a href="http://www.cambridgeesol.org/exams/celta/index.html">CELTA</a>)" at <a href="http://www.attc.edu.au/">ATTC</a>.</p>
 
